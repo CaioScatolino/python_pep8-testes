@@ -26,5 +26,9 @@ new_item = input("Digite o item que deseja adicionar: ")
 added = list.add_item(new_item)
 if added == True:
     print("Item adicionado com sucesso!")
+
+    list = List("lista")
+    for item in list.get_list():
+        print(f"-- {item}")
 else:
     print("Item inválido!")
